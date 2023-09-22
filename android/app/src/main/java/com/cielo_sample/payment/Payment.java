@@ -89,7 +89,7 @@ public class Payment extends ReactContextBaseJavaModule {
             final Activity activity = getCurrentActivity();
 
             if (activity == null) {
-                throw new Exception("Nao existe nenhuma atividade!");
+                throw new Exception("Not found activity");
             }
 
             Intent intent = new Intent(Intent.ACTION_VIEW);
