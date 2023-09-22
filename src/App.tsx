@@ -26,6 +26,7 @@ function App(): JSX.Element {
   };
 
   const handle = async () => {
+    setResponse('Aguarde...');
     const service = new Cielo();
 
     const data = await service.payment();
